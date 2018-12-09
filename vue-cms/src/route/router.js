@@ -5,13 +5,15 @@ import HomeContainer from '../components/tabbar/HomeContainer.vue'
 import MemeberContainer from '../components/tabbar/MemberContainer.vue'
 import ShopCarContainer from '../components/tabbar/ShopCarContainer.vue'
 import SearchContainer from '../components/tabbar/SearchContainer.vue'
+import NewsList from '../components/news/NewsList.vue'
 
 // 3. 创建路由对象
 var router = new VueRouter({
   mode:'history', // 配置路由链接为history模式
   routes: [ // 配置路由规则
     {path:'/',redirect:"/home"},
-    {path:'/home',component:HomeContainer},,
+    {path:'/home',component:HomeContainer},
+    {path:"/home/newslist",component:NewsList},
     {path:'/memeber',component:MemeberContainer},
     {path:'/shopcar',component:ShopCarContainer},
     {path:'/search',component:SearchContainer}

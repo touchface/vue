@@ -1,6 +1,6 @@
 import Vue from "vue"
 import app from "./App.vue"
-import { Header,Swipe, SwipeItem } from 'mint-ui'
+import { Header,Swipe, SwipeItem,Toast} from 'mint-ui'
 import axios from 'axios'
 // 1.1 导入路由模块
 import VueRouter from "vue-router"
@@ -22,6 +22,8 @@ Vue.component(SwipeItem.name, SwipeItem);
 
 // 2.1 导入axios
 
+// 设置axios的baseurl
+axios.defaults.baseURL="http://www.liulongbin.top:3005";
 // 将axios注入到Vue当中
 Vue.prototype.axios=axios;
 
