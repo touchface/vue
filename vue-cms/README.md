@@ -43,3 +43,39 @@
 1. 绘制界面
 2. 使用axios获取数据
 3. 渲染数据
+
+## 实现新闻列表 点击跳转 新闻详情
+
+1. 改造路由为router-link标签
+2. 创建新闻详情组件NewsInfo.vue组件
+3. 在路由中将新闻详情和页面对应起来
+
+## 实现新闻详情数据渲染
+
+## 实现评论布局
+
+## 渲染评论数据
+获取数据，渲染到页面当中
+
+## 评论
+1. 评论框与数据进行双向绑定
+2. 为发表按钮绑定事件
+3. 验证评论内容是否为空，不为空才能发送
+4. 通过axios发表评论请求
+5. 刷新评论，将发送的评论追加到comments头部
+
+## 改造图片链接为路由链接
+
+## 制作顶部滑动条
+由于使用了MUI中的Js文件，而项目处于严格模式，在调用mui.js文件时，会发生一些异常，所以我们需要关闭babel的严格模式
+使用`cnpm install babel-plugin-transform-remove-strict-mode` 插件,在.babel文件中设置以下配置
+~~~
+  "plugins": ["transform-runtime", ["component", [
+    {
+      "libraryName": "mint-ui",
+      "style": true
+    }
+  ]],"transform-remove-strict-mode"]
+~~~
+
+## 制作图片列表
